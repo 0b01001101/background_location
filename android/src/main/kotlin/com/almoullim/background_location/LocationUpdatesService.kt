@@ -51,10 +51,11 @@ class LocationUpdatesService : Service() {
             
             val builder = NotificationCompat.Builder(this)
                     .setContentTitle(NOTIFICATION_TITLE)
+                    .setContentText("You can stop the tracking by closing the app")
                     .setOngoing(true)
                     .setSound(null)
                     .setPriority(Notification.PRIORITY_HIGH)
-                    .setSmallIcon(R.drawable.navigation_empty_icon)
+                    //.setSmallIcon(R.drawable.navigation_empty_icon)
                     .setWhen(System.currentTimeMillis())
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
