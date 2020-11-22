@@ -55,7 +55,7 @@ class LocationUpdatesService : Service() {
                     .setOngoing(true)
                     .setSound(null)
                     .setPriority(Notification.PRIORITY_HIGH)
-                    //.setSmallIcon(R.drawable.navigation_empty_icon)
+                    .setSmallIcon(R.mipmap.ic_launcher)
                     .setWhen(System.currentTimeMillis())
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
